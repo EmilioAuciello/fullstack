@@ -1,0 +1,20 @@
+
+form{
+    width: 180px;
+  margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  
+}
+#datos{
+    display: inline-block;
+    padding: 5px;
+    width: 100%;
+  }
+.cobertura{
+    padding: 10px;
+    vertical-align: middle;
+     margin-bottom: 20px;
+     width: auto;
+}
+ 

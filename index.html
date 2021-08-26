@@ -4,12 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="/js/valida.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div>
+    
+        <form action="validaDatos()" id="formulario">
+        <label  for="nombre" id="datos">Seguro No Pagamos Cooperativa</label>    
+        <label  for="nombre" id="datos">Nombre</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre"><br>
+
+        <label  for="apellido" id="datos">Apellido</label>
+        <input type="text" id="apellido" placeholder="Escribe tu apellido"><br>
+        
+        <label  for="dni" id="datos">DNI</label>
+        <input type="text" id="dni" placeholder="Escribe tu dni"><br>
+
+        <label  for="email" id="datos">Email</label>
+        <input type="text" id="email" placeholder="Escribe tu email"><br>
+        
+        <label  for="telefono" id="datos">Teléfono</label>
+        <input type="text" id="telefono" placeholder="Escribe tu telefono"><br>
+<div class="cobertura">
+    <label for="plan" id="datos">Seleccione su Plan</label> <br>
+         <input type="radio" name="tipo">Plan Basico<br>
+         <input type="radio" name="tipo">Plan Intermedio<br>
+         <input type="radio" name="tipo">Plan Premium<br>
+    </div>
+    <input type="submit" id="enviar" value="Enviar"> 
+    <br> 
+    <label id="valor"></label>
+<br> 
+
+        
+    </form>
 
     </div>
     
 </body>
+
 </html>
