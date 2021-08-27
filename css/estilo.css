@@ -1,6 +1,6 @@
 
 body{
-    background-image: url(/img/background.jpg);
+    background-image: url(../img/background.jpg);
     background-size: 100vw 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

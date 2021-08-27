@@ -75,6 +75,7 @@ function validarFormulario(evento) {
     }
 
     this.submit();
+    alert("Formulario Enviado Correctamente");
 }
 
 function completoMonto() {
