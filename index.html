@@ -9,29 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <h1>Seguro No Pagamos Cooperativa </h1>
+    <div class="formulario">
     
-        <form action="validaDatos()" id="formulario">
-        <label  for="nombre" id="datos">Seguro No Pagamos Cooperativa</label>    
+        <form onsubmit="validaDatos()" id="formulario">
+          
         <label  for="nombre" id="datos">Nombre</label>
-        <input type="text" id="nombre" placeholder="Escribe tu nombre"><br>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" ><br>
 
         <label  for="apellido" id="datos">Apellido</label>
-        <input type="text" id="apellido" placeholder="Escribe tu apellido"><br>
+        <input type="text" id="apellido" placeholder="Escribe tu apellido" ><br>
         
-        <label  for="dni" id="datos">DNI</label>
-        <input type="text" id="dni" placeholder="Escribe tu dni"><br>
+        <label  for="dni" id="datos">DNI </label>
+        <input type="text" id="dni" placeholder="Escribe tu dni" ><br>
 
         <label  for="email" id="datos">Email</label>
-        <input type="text" id="email" placeholder="Escribe tu email"><br>
+        <input type="text" id="email" placeholder="Escribe tu email" ><br>
         
         <label  for="telefono" id="datos">Teléfono</label>
-        <input type="text" id="telefono" placeholder="Escribe tu telefono"><br>
+        <input type="text" id="telefono" placeholder="Escribe tu telefono sin guiones" ><br>
 <div class="cobertura">
     <label for="plan" id="datos">Seleccione su Plan</label> <br>
-         <input type="radio" name="tipo">Plan Basico<br>
-         <input type="radio" name="tipo">Plan Intermedio<br>
-         <input type="radio" name="tipo">Plan Premium<br>
+         <input type="radio" name="tipo" id="radio" checked>Plan Basico<br>
+         <input type="radio" name="tipo" id="radio">Plan Intermedio<br>
+         <input type="radio" name="tipo" id="radio">Plan Premium<br>
     </div>
     <input type="submit" id="enviar" value="Enviar"> 
     <br> 
