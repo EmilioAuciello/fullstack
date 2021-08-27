@@ -58,16 +58,9 @@ function validarFormulario(evento) {
         mensaje += "Telefono no Valido \n";
     }
     // selecciono opcion
-    var radios = document.getElementsByName("tipo");
-    var formValid = false;
+   
 
-    var i = 0;
-    while (!formValid && i < radios.length) {
-        if (radios[i].checked) formValid = true;
-        i++;
-    }
-
-    if (!formValid) mensaje += "No has seleccionado ninguna opcion";
+    if (!validoradio()) mensaje += "No has seleccionado ninguna opcion";
 
     if (mensaje.length > 1) {
         alert(mensaje);
@@ -76,6 +69,18 @@ function validarFormulario(evento) {
 
     this.submit();
     alert("Formulario Enviado Correctamente");
+}
+function validoradio(){
+    var radios = document.getElementsByName("tipo");
+    var formValid = false;
+
+    var i = 0;
+    while (!formValid && i < radios.length) {
+        if (radios[i].checked) formValid = true;
+        i++;
+    }
+    return formValid;
+
 }
 
 function completoMonto() {
