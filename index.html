@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo.css">
-    <script src="/js/valida.js"></script>
+    <script type="text/javascript" src="/js/valida.js"></script>
     <title>Document</title>
 </head>
 <body>
     <h1>Seguro No Pagamos Cooperativa </h1>
     <div class="formulario">
     
-        <form onsubmit="validaDatos()" id="formulario">
+        <form  id="formulario">
           
         <label  for="nombre" id="datos">Nombre</label>
         <input type="text" id="nombre" placeholder="Escribe tu nombre" ><br>
@@ -30,9 +30,12 @@
         <input type="text" id="telefono" placeholder="Escribe tu telefono sin guiones" ><br>
 <div class="cobertura">
     <label for="plan" id="datos">Seleccione su Plan</label> <br>
-         <input type="radio" name="tipo" id="radio" checked>Plan Basico<br>
-         <input type="radio" name="tipo" id="radio">Plan Intermedio<br>
-         <input type="radio" name="tipo" id="radio">Plan Premium<br>
+         <input type="radio" name= "tipo" value="basico"  id="radio" onclick="completoMonto()" >
+         <label for="basico" id="lBasico">Plan Basico</label><br>         
+         <input type="radio" name= "tipo" value="intermedio" id="radio" onclick="completoMonto()">
+         <label for="intermedio" id="lIntermedio" >Plan Intermedio</label><br>
+         <input type="radio" name= "tipo" value="premium" id="radio" onclick="completoMonto()">
+         <label for="Premium" id="lPremium">Plan Premium</label><br>
     </div>
     <input type="submit" id="enviar" value="Enviar"> 
     <br> 
